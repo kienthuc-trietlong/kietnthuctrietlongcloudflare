@@ -1,0 +1,180 @@
+/* Custom CSS for Website Demo */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: #070101;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background: #fafbfc;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    border-left: 4px solid #667eea;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 25px;
+}
+
+.image-desc {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+ul {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.highlight {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+
+/* ➕ Thuộc tính cho hình ảnh */
+
+img {
+    width: 800px;
+    height: 450px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
